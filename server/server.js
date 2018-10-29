@@ -28,7 +28,7 @@ app.get('/todos', (req, res) => {
     res.send({todos}); //using object instead of array makes for more flexible coding options
   }, (e) => {
     res.status(400).send(e);
-  })
+  });
 });
 
 app.listen(3000, () => {
